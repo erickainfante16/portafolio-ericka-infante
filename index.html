@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ericka Infante | Desarrolladora Web Full Stack</title>
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,700..900;1,700..900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="main-header">
+    <nav class="container navbar">
+      <a href="#inicio" class="brand" data-page="inicio">
+        <span class="sparkle">✦</span> Ericka Infante
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><button class="nav-btn active" data-page="inicio">Inicio</button></li>
+        <li><button class="nav-btn" data-page="habilidades">Habilidades</button></li>
+        <li><button class="nav-btn" data-page="proyectos">Proyectos</button></li>
+        <li><button class="nav-btn" data-page="blog">Blog</button></li>
+        <li><button class="nav-btn" data-page="contacto">Contáctame</button></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container main-wrapper">
+
+    <!-- =========================================================
+         VISTA 1: INICIO Y SOBRE MÍ
+    ========================================================== -->
+    <section id="page-inicio" class="page-section active">
+      <div class="hero-intro">
+        <p class="welcome-kicker">✦ Bienvenidos a mi ✦</p>
+        <h1 class="giant-portfolio-title">PORTAFOLIO</h1>
+        <h2 class="hero-name">¡HOLA! soy <span>Ericka Infante</span> ✦</h2>
+        <p class="hero-role">Desarrolladora Web Full Stack</p>
+      </div>
+
+      <!-- Tarjeta "Sobre mi" -->
+      <div class="about-scrap-board">
+        <div class="polaroid-column">
+          <div class="speech-bubble">¡HOLA! 👋</div>
+          <div class="polaroid-frame">
+            <div class="paperclip" aria-hidden="true"></div>
+            <img src="assets/foto-ericka.jpg" alt="Avatar ilustrado de Ericka Infante" onerror="this.src='https://placehold.co/400x420/FFCAE4/461D3A?text=Ericka+Infante'" />
+            <p class="polaroid-tag">Ericka Infante • Dev</p>
+          </div>
+        </div>
+
+        <div class="bio-column">
+          <span class="pill-badge">SOBRE MÍ</span>
+          <h3>Hola, soy Ericka ✨</h3>
+          <p class="bio-lead">
+            Desarrolladora web Full Stack Junior enfocada en transformar ideas en productos digitales escalables, integrando <strong>Java, JavaScript y herramientas de IA</strong> para construir experiencias dinámicas.
+          </p>
+
+          <!-- Insignias Destacadas -->
+          <div class="badges-grid">
+            <div class="sticker-badge">
+              <strong>Full Stack</strong>
+              <span>Frontend & Backend</span>
+            </div>
+            <div class="sticker-badge">
+              <strong>Código & IA</strong>
+              <span>Soluciones Modernas</span>
+            </div>
+            <div class="sticker-badge">
+              <strong>Scrum & Agile</strong>
+              <span>Trabajo Colaborativo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         VISTA 2: HABILIDADES Y STACK
+    ========================================================== -->
+    <section id="page-habilidades" class="page-section">
+      <div class="skills-header-row">
+        <div>
+          <span class="pill-badge">STACK TECNOLÓGICO</span>
+          <h2 class="section-heading">Mis Habilidades & Stack ✦</h2>
+          <p class="location-note">
+            <i class="fa-solid fa-location-dot"></i> Estado de México  • 
+            <i class="fa-solid fa-globe"></i> Disponibilidad de reubicación
+          </p>
+        </div>
+        <img src="assets/avatar-ericka.png" alt="Avatar Ericka" class="mini-sticker-avatar" onerror="this.style.display='none'" />
+      </div>
+
+      <div class="stack-cards-container">
+        <!-- Frontend -->
+        <div class="stack-panel">
+          <div class="panel-header">✦ Frontend / Interfaz ✦</div>
+          <div class="icons-row">
+            <div class="tech-tile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+              <span>HTML5</span>
+            </div>
+            <div class="tech-tile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+              <span>CSS3</span>
+            </div>
+            <div class="tech-tile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-tile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="stack-panel">
+          <div class="panel-header">✦ Backend / Lógica ✦</div>
+          <div class="icons-row">
+            <div class="tech-tile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+              <span>Java</span>
+            </div>
+            <div class="tech-tile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" />
+              <span>Spring Boot</span>
+            </div>
+            <div class="tech-tile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+              <span>Python</span>
+            </div>
+            <div class="tech-tile">
+              <i class="fa-solid fa-plug-circle-bolt tech-fa-icon"></i>
+              <span>APIs REST & JPA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bases de Datos & Herramientas -->
+        <div class="stack-panel">
+          <div class="panel-header">✦ Bases de Datos & Herramientas ✦</div>
+          <div class="icons-row">
+            <div class="tech-tile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+              <span>MySQL</span>
+            </div>
+            <div class="tech-tile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+              <span>Git</span>
+            </div>
+            <div class="tech-tile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+              <span>GitHub</span>
+            </div>
+            <div class="tech-tile">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" alt="Salesforce" />
+              <span>Salesforce & Zammad</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metodologías y Blandas -->
+        <div class="stack-panel">
+          <div class="panel-header">✦ Metodologías & Habilidades Blandas ✦</div>
+          <div class="soft-pills">
+            <span>Agile / Scrum</span>
+            <span>Pensamiento Analítico</span>
+            <span>Resolución Estructurada de Problemas</span>
+            <span>Control de Calidad (QA & KPIs)</span>
+            <span>Mejora Continua</span>
+            <span>Trabajo Colaborativo</span>
+            <span>Comunicación Técnica Clara</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         VISTA 3: PROYECTOS
+    ========================================================== -->
+    <section id="page-proyectos" class="page-section">
+      <div class="projects-header">
+        <span class="pill-badge">PORTAFOLIO</span>
+        <h2 class="section-heading">Mis Proyectos ✦</h2>
+        <p>Selecciona cualquier proyecto para abrir su ficha técnica con propósito, desafíos resueltos, tecnologías y enlaces.</p>
+      </div>
+
+      <div class="projects-showcase">
+        <!-- Proyecto 1: MERCH F1 -->
+        <article class="visual-project-card" data-project="merchf1" tabindex="0" role="button" aria-label="Abrir detalles de MERCH F1">
+          <div class="paperclip" aria-hidden="true"></div>
+          <h3>MERCH F1 (Landing Page)</h3>
+          <div class="project-img-box">
+            <img src="assets/proyecto-merch-f1.png" alt="MERCH F1 Landing Page" onerror="this.src='https://placehold.co/461D3A/ECD0EC?text=MERCH+F1+%E2%80%94+Landing+Page'" />
+            <span class="click-overlay"><i class="fa-solid fa-eye"></i> Ver detalles del proyecto</span>
+          </div>
+        </article>
+
+        <!-- Proyecto 2: AutoFlow -->
+        <article class="visual-project-card" data-project="autoflow" tabindex="0" role="button" aria-label="Abrir detalles de AutoFlow">
+          <div class="paperclip" aria-hidden="true"></div>
+          <h3>AutoFlow (Proyecto Integrador)</h3>
+          <div class="project-img-box">
+            <img src="assets/proyecto-autoflow.png" alt="AutoFlow Plataforma Web" onerror="this.src='https://placehold.co/900x520/ECD0EC/461D3A?text=AutoFlow+%E2%80%94+Plataforma+Full+Stack'" />
+            <span class="click-overlay"><i class="fa-solid fa-eye"></i> Ver detalles del proyecto</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         VISTA 4: BLOG (PRÓXIMAMENTE)
+    ========================================================== -->
+    <section id="page-blog" class="page-section">
+      <div class="blog-container">
+        <div class="blog-coming-soon-card">
+          <div class="paperclip" aria-hidden="true"></div>
+          <span class="pill-badge">BITÁCORA DEV</span>
+          
+          <div class="coming-soon-icon">
+            <i class="fa-solid fa-feather-pointed"></i>
+          </div>
+
+          <h2 class="coming-soon-title">Próximamente ✦</h2>
+          
+          <p class="coming-soon-text">
+            Estoy preparando este espacio para compartir mis aprendizajes sobre <strong>desarrollo web Full Stack</strong>, notas de arquitectura con <strong>Java y Spring Boot</strong>, y experiencias construyendo proyectos desde cero.
+          </p>
+
+          <div class="coming-soon-topics">
+            <span><i class="fa-brands fa-java"></i> Java & Spring Boot</span>
+            <span><i class="fa-solid fa-code"></i> Buenas Prácticas</span>
+            <span><i class="fa-solid fa-wand-magic-sparkles"></i> IA & Desarrollo</span>
+          </div>
+
+          <button class="btn-outline-dark" data-page="proyectos">
+            <i class="fa-solid fa-folder-open"></i> Mientras tanto, explora mis proyectos
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         VISTA 5: CONTÁCTAME
+    ========================================================== -->
+    <section id="page-contacto" class="page-section">
+      <div class="contact-page-layout">
+        <div class="contact-scrapbook-card">
+          <div class="paperclip" aria-hidden="true"></div>
+          <span class="pill-badge">ESTOY A UN CLIC</span>
+          <h2 class="contact-title">¡Hagamos equipo! ✦</h2>
+          <p class="contact-desc">
+            Actualmente busco oportunidades como <strong>Desarrolladora Web Full Stack Jr.</strong> ¡Conectemos y construyamos grandes soluciones juntas!
+          </p>
+
+          <div class="contact-details-grid">
+            <a href="mailto:ericka_infante@outlook.es" class="contact-tile">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span class="tile-label">Correo electrónico</span>
+                <strong>ericka_infante@outlook.es</strong>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-social-buttons">
+            <a href="https://github.com/erickainfante16" target="_blank" rel="noopener" class="btn-outline-dark">
+              <i class="fa-brands fa-github"></i> Visitar GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/erickainfante" target="_blank" rel="noopener" class="btn-outline-dark">
+              <i class="fa-brands fa-linkedin"></i> Ver LinkedIn
+            </a>
+            <a href="assets/CV-Ericka-Infante.pdf" download="CV-Patsy-Ericka-Infante.pdf" class="btn-raspberry">
+              <i class="fa-solid fa-file-arrow-down"></i> Descargar / Ver CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Limpio (fuera de main para que abarque todo el ancho hasta abajo) -->
+  <footer class="bottom-cta-footer">
+    <div class="container footer-clean-centered">
+      <p class="footer-copy">© 2026 Patsy Ericka Infante Martínez • Desarrolladora Web Full Stack</p>
+    </div>
+  </footer>
+
+  <!-- Modal Interactivo de Proyecto -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="Cerrar ventana">×</button>
+      <span class="pill-badge" id="modalContext">CONTEXTO / ROL</span>
+      <h3 id="modalTitle" class="modal-title">Nombre del Proyecto</h3>
+      <img id="modalImage" src="" alt="Vista previa del proyecto" class="modal-img" />
+
+      <div class="modal-info-grid">
+        <div class="modal-block">
+          <h4><i class="fa-solid fa-bullseye"></i> Propósito y Problema que Resuelve</h4>
+          <p id="modalPurpose"></p>
+        </div>
+        <div class="modal-block">
+          <h4><i class="fa-solid fa-screwdriver-wrench"></i> Desafíos Enfrentados y Solución</h4>
+          <p id="modalChallenge"></p>
+        </div>
+      </div>
+
+      <div class="modal-tech">
+        <h4><i class="fa-solid fa-code"></i> Tecnologías y Lenguajes Utilizados</h4>
+        <div class="modal-tech-list" id="modalTech"></div>
+      </div>
+
+      <div class="modal-links">
+        <a id="modalGithub" href="#" target="_blank" rel="noopener" class="btn-outline-dark">
+          <i class="fa-brands fa-github"></i> Código en GitHub
+        </a>
+        <a id="modalDemo" href="#" target="_blank" rel="noopener" class="btn-raspberry">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Enlace a la Web
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script de Navegación y Modales -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navTriggers = document.querySelectorAll('[data-page]');
+      const sections = document.querySelectorAll('.page-section');
+      const navLinks = document.getElementById('navLinks');
+      const menuToggle = document.getElementById('menuToggle');
+
+      function switchPage(pageName) {
+        sections.forEach((sec) => {
+          sec.classList.toggle('active', sec.id === `page-${pageName}`);
+        });
+
+        document.querySelectorAll('.nav-btn').forEach((btn) => {
+          btn.classList.toggle('active', btn.dataset.page === pageName);
+        });
+
+        if (navLinks) navLinks.classList.remove('open');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      navTriggers.forEach((el) => {
+        el.addEventListener('click', (e) => {
+          const page = el.dataset.page;
+          if (page) {
+            e.preventDefault();
+            switchPage(page);
+          }
+        });
+      });
+
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('open');
+        });
+      }
+
+      const projectsCatalog = {
+        autoflow: {
+          context: 'Desarrolladora Full Stack & Scrum Master • Proyecto Integrador Generation México',
+          title: 'AutoFlow — Plataforma de Automatización',
+          image: 'assets/proyecto-autoflow.png',
+          fallback: 'https://placehold.co/900x520/ECD0EC/461D3A?text=AutoFlow+%E2%80%94+Plataforma+Full+Stack',
+          purpose: 'Plataforma web integral diseñada para automatizar flujos de atención y ventas empresariales con integración a WhatsApp, centralizando servicios digitales para negocios.',
+          challenge: 'Conectar una interfaz responsiva con una API REST en Java/Spring Boot y base de datos relacional en MySQL, coordinando sprints ágiles bajo Scrum y control de versiones en GitHub.',
+          tech: ['Java', 'Spring Boot', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'Git/GitHub'],
+          github: 'https://github.com/erickainfante16',
+          demo: 'https://github.com/erickainfante16'
+        },
+        merchf1: {
+          context: 'Desarrolladora Frontend • Hackathon Generation México',
+          title: 'MERCH F1 — Landing Page E-Commerce',
+          image: 'assets/proyecto-merch-f1.png',
+          fallback: 'https://placehold.co/900x520/461D3A/ECD0EC?text=MERCH+F1+%E2%80%94+Landing+Page',
+          purpose: 'Tienda web promocional creada en un hackathon de 6 horas para exhibir mercancía oficial de Fórmula 1 con navegación intuitiva y diseño responsivo.',
+          challenge: 'Construir la sección Hero y coordinar ramas simultáneas de un equipo de 5 desarrolladores en GitHub sin conflictos de integración, desplegando el sitio en vivo en GitHub Pages.',
+          tech: ['HTML5', 'CSS3', 'Bootstrap 5', 'JavaScript', 'Git/GitHub Pages'],
+          github: 'https://github.com/erickainfante16/Hackaton-Landing-Page-F1',
+          demo: 'https://erickainfante16.github.io/Hackaton-Landing-Page-F1/'
+        }
+      };
+
+      const modal = document.getElementById('projectModal');
+      const closeModalBtn = document.getElementById('closeModal');
+      const projectCards = document.querySelectorAll('.visual-project-card');
+
+      function openModal(key) {
+        const item = projectsCatalog[key];
+        if (!item || !modal) return;
+
+        document.getElementById('modalContext').textContent = item.context;
+        document.getElementById('modalTitle').textContent = item.title;
+
+        const imgEl = document.getElementById('modalImage');
+        imgEl.src = item.image;
+        imgEl.onerror = () => { imgEl.src = item.fallback; };
+
+        document.getElementById('modalPurpose').textContent = item.purpose;
+        document.getElementById('modalChallenge').textContent = item.challenge;
+
+        const techList = document.getElementById('modalTech');
+        techList.innerHTML = item.tech.map((tech) => `<span>${tech}</span>`).join('');
+
+        document.getElementById('modalGithub').href = item.github;
+        document.getElementById('modalDemo').href = item.demo;
+
+        modal.classList.add('open');
+        modal.setAttribute('aria-hidden', 'false');
+      }
+
+      function closeModal() {
+        if (!modal) return;
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+      }
+
+      projectCards.forEach((card) => {
+        card.addEventListener('click', () => openModal(card.dataset.project));
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openModal(card.dataset.project);
+          }
+        });
+      });
+
+      if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal();
+        });
+      }
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal && modal.classList.contains('open')) closeModal();
+      });
+    });
+  </script>
+</body>
+</html>
